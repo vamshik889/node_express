@@ -1,0 +1,19 @@
+{
+  "name": "practice-day1-and-2",
+  "version": "1.0.0",
+  "main": "day-6express.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon ./day6-express.js localhost 8081"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "is-even": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

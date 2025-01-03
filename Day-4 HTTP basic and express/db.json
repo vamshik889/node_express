@@ -1,0 +1,8 @@
+{
+  "students": [
+    { "id": 1, "city": "Pune" },
+    { "id": 2, "city": "delhi" },
+    { "id": 3, "city": "hyderabad" }
+  ],
+  "teachers": [{}]
+}
