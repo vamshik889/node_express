@@ -4,7 +4,7 @@ const { User, Product } = require("./clientProductSchema");
 
 const app = express();
 app.use(express.json());
-
+//
 app.post("/client", async (req, res) => {
   const products = await Product.insertMany(req.body.products);
 
