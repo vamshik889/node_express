@@ -17,7 +17,7 @@ userRouter.post("/register", async (req, res) => {
       } else {
         const user = new userModel({ name, email, password: hash, age });
         await user.save();
-        res.status(200).send({ message: "User has been save successfully" });
+        res.status(200).send({ message: "User has been saved successfully" });
       }
     });
   } catch (error) {
