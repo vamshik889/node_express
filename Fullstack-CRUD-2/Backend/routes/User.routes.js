@@ -11,9 +11,10 @@ UserRouter.post("/register", async (req, res) => {
   const { email, age, password,name } = req.body;
 
   try {
-    bcrypt.hash(password, 7, async function (err, hash) {
+    bcrypt.hash(password, 10, async (err, hash)=> {
+      console.log(password)
       if (err) {
-        res.status(400);
+        res.status(400).send({message:"error in hashing password"});
         console.log(err, "error in hashing");
       } else {
         const user = new usersModel({ email, age, password: hash ,name });
