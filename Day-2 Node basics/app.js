@@ -9,4 +9,8 @@ const pro = (a, b) => {
   console.log(a * b);
 };
 
-module.exports = { sum, sub, pro };
+const divide = (a,b)=>{
+  if(a>=0) {return a/b}
+}
+
+module.exports = { sum, sub, pro,divide };

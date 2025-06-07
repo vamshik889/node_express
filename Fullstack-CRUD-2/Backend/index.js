@@ -20,6 +20,8 @@ app.use("/user", UserRouter);
 
 app.use(auth);
 app.use("/note", NotesRouter);
+// app.use("/note",auth, NotesRouter); we can write this way as well
+
 
 app.listen(process.env.PORT, async () => {
   try {
